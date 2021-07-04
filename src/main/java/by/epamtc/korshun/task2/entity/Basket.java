@@ -1,8 +1,6 @@
 package by.epamtc.korshun.task2.entity;
 
 
-import by.epamtc.korshun.task2.exception.NullBallException;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -70,8 +68,10 @@ public class Basket implements Serializable {
     }
 
     public  List<Ball> getBalls() {
-//        if(balls!=null)
         Ball [] arrayOfBalls = {};
+          if(balls==null) {
+              arrayOfBalls= new Ball[]{};
+          }
         return  List.of(balls.toArray(arrayOfBalls));
     }
 

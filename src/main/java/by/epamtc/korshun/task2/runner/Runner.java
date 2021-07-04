@@ -31,7 +31,7 @@ public class Runner {
             System.out.println(BasketService.countingBlue(balls)+"  blue balls\nweight is  "+BasketService.countingWeight(balls));
             System.out.println(basket);
         }
-        catch (InappropriateValException | NullBasketException e /*| NullBallException e */){
+        catch (InappropriateValException | NullBasketException |NullBallException e ){
             System.err.println("not correct value");
         }
     }

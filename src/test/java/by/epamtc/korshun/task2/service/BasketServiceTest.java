@@ -2,6 +2,7 @@ package by.epamtc.korshun.task2.service;
 
 import by.epamtc.korshun.task2.entity.Ball;
 import by.epamtc.korshun.task2.entity.Color;
+import by.epamtc.korshun.task2.exception.NullBallException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -82,7 +83,7 @@ public class BasketServiceTest {
     }
 
     @Test
-    public void countingWeightTestWithoutSetWeight() {
+    public void countingWeightTestWithoutSetWeight() throws NullBallException {
         List<Ball>  balls = new ArrayList<>();
         Ball ball = new Ball();
         balls.add(ball);
@@ -91,7 +92,7 @@ public class BasketServiceTest {
         Assert.assertEquals(actual, expected,0.0);
     }
     @Test
-    public void countingWeightTestWithSetWeight() {
+    public void countingWeightTestWithSetWeight() throws NullBallException {
         List<Ball>  balls = new ArrayList<>();
         Ball ball = new Ball();
         ball.setWeight(100);
@@ -101,7 +102,7 @@ public class BasketServiceTest {
         Assert.assertEquals(actual, expected,0.0);
     }
     @Test
-    public void countingWeightTestWithSetWeight5Times() {
+    public void countingWeightTestWithSetWeight5Times() throws NullBallException {
         List<Ball>  balls = new ArrayList<>();
         Ball ball = new Ball();
         ball.setWeight(100);
@@ -115,7 +116,7 @@ public class BasketServiceTest {
         Assert.assertEquals(actual, expected,0.0);
     }
     @Test
-    public void countingWeightTestWithSetNegativeWeight() {
+    public void countingWeightTestWithSetNegativeWeight() throws NullBallException {
         List<Ball>  balls = new ArrayList<>();
         Ball ball = new Ball();
         ball.setWeight(-100);

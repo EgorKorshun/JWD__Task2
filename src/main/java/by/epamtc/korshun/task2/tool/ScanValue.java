@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class ScanValue {
     static Scanner scanner = new Scanner(System.in);
-
     public  static  int enterPositiveInt(){
         int number;
         while (!scanner.hasNextInt()){
@@ -28,7 +27,6 @@ public class ScanValue {
     public  static  int enterNumOfColors(){
         int number = enterPositiveInt();
         if(number>8||number<0){
-            System.out.println(" 1  -  8");
             number = scanner.nextInt();
         }
         return  number;

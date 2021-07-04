@@ -1,6 +1,5 @@
 package by.epamtc.korshun.task2.entity;
 
-import java.awt.*;
 import java.io.Serializable;
 
 public class Ball  implements Serializable {
@@ -17,7 +16,6 @@ public class Ball  implements Serializable {
             this.weight = weight;
         }
     }
-
 
     public double getWeight() {
         return weight;

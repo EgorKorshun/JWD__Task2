@@ -1,6 +1,6 @@
 package by.epamtc.korshun.task2.exception;
 
-public class NullBallException extends Exception {
+public class NullBallException extends Exception{
     public NullBallException() {
     }
 
@@ -16,4 +16,3 @@ public class NullBallException extends Exception {
         super(cause);
     }
 }
-

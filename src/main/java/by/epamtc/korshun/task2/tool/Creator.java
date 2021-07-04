@@ -12,5 +12,4 @@ public class Creator {
             new Ball(ServiceOfBall.numberOfColor(),ScanValue.enterWeight());
         }
     }
-
 }

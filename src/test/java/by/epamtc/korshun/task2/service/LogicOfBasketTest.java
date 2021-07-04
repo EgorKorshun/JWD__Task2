@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static by.epamtc.korshun.task2.service.LogicOfBasket.returnQuantityOfBalls;
-import static org.junit.Assert.*;
 
 public class LogicOfBasketTest {
 

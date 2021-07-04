@@ -3,7 +3,6 @@ package by.epamtc.korshun.task2.exception;
 public class InappropriateValException extends  Exception{
     public InappropriateValException() {
     }
-
     public InappropriateValException(String message) {
         super(message);
     }
