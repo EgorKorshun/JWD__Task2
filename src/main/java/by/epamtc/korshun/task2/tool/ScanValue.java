@@ -20,7 +20,6 @@ public class ScanValue {
         }
         return number;
     }
-
     public  static  double enterWeight(){
         return  enterPositiveDouble();
     }
